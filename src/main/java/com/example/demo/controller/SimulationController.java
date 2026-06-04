@@ -1,8 +1,8 @@
-package com.example.projectile.controller;
+package com.example.demo.controller;
 
-import com.example.projectile.dto.InputDTO;
-import com.example.projectile.dto.OutputDTO;
-import com.example.projectile.service.ProjectileService;
+
+import com.example.demo.dto.OutputDTO;
+import com.example.demo.service.ProjectileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +15,7 @@ public class SimulationController {
     private ProjectileService projectileService;
 
     @PostMapping
-    public OutputDTO simulate(@RequestBody InputDTO input) {
+    public OutputDTO simulate(@RequestBody com.example.demo.dto.InputDTO input) {
         return projectileService.simulate(input);
     }
 }

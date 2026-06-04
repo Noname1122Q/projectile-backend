@@ -1,4 +1,4 @@
-package com.example.projectile.dto;
+package com.example.demo.dto;
 
 public class InputDTO {
     public double g;
